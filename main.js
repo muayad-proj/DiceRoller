@@ -17,16 +17,17 @@ submitButton.addEventListener("click", function () {
 })
 
 totalshow.addEventListener("click", function () {
-   // let totalRoll = 0
+ let  sum = 0
     for (let count1 = 0; count1 < dieRolls.length; count1++) {
         let numberRolled = dieRolls[count1]
         const newDiceString = '<li class="dice">' + numberRolled + "</li>";
         allRolls.innerHTML+=newDiceString
+        sum= sum+numberRolled
     }
-    console.log(dieRolls)
-
-
+    TotaleEl.innerHTML=sum
+    //console.log(dieRolls)
 })
+
 
 
 
